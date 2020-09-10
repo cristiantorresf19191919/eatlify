@@ -1,0 +1,95 @@
+.catSliderContainer {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    overflow-y: hidden;
+    max-height: 150px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px;
+    border-bottom: 3px solid gold;
+  }
+  
+  .catSliderContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .catSliderContainer .item {
+    position: relative;
+    width: 8vw;
+    height: 7vw;
+    margin: 0vw 2vw 0vw 2vw;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 4px solid orange;
+    -webkit-box-shadow: 0px 0px 0px 5px gold;
+            box-shadow: 0px 0px 0px 5px gold;
+    background-position: top;
+    background-size: cover;
+  }
+  
+  .catSliderContainer .item p {
+    position: relative;
+    top: 70%;
+    color: white;
+    background: radial-gradient(gold, orange);
+    border-left: 2px solid var(--back);
+    border-right: 2px solid var(--back);
+    padding-left: 1.3vw;
+    padding-right: 1.3vw;
+    width: 134px;
+    padding-top: 1.2vw;
+    border-radius: 20vw;
+    -webkit-box-shadow: 0px 0px 1px 3px gold inset;
+            box-shadow: 0px 0px 1px 3px gold inset;
+    font-weight: 1000;
+    text-align: center;
+  }
+  
+  .flecha-izquierda {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: radial-gradient(gold,orange);
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    border:3.5px solid gold ;
+    box-shadow: 0px 0px 1px 3.5px white inset;
+    cursor:pointer;
+  }
+  
+  .flecha-derecha {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background:radial-gradient(gold,orange);
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    border:3.5px solid gold ;
+    box-shadow: 0px 0px 1px 3.5px white inset;
+     cursor:pointer;
+  
+    }
+  
+  
+  
+  
+  .flecha-izquierda:active ,  .flecha-derecha:active {
+  
+  border:3.5px solid white ;
+  
+  
+  }
+  

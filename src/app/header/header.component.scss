@@ -1,0 +1,82 @@
+.menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    
+    height: 5.85vw;
+   background:gold ;
+   
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 0px solid #f58000;
+    padding: 0 3%;
+    z-index: 20000;
+    box-shadow: 0px 0px 35px 25px orange inset;
+    border-bottom: 3px solid orange;
+    
+  }
+  
+  .menu .tab {
+    position: relative;
+    margin-left: 3.5vw;
+    font-size: 3.5vw;
+    font-family: Gabriola;
+    color: white;
+    text-shadow: 0px 0px 10px gold;
+    cursor: pointer;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    
+  }
+  
+  
+  
+  .menu .tab:before {
+    
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left:0%;
+  height: 3px;
+  width: 0%;
+  background:white; 
+   transition: 0.5s all ease;
+  }
+  
+  .menu .tab:hover:before {
+    width: 100%;
+    
+   
+  }
+  
+  
+  
+  
+  .menu .space {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  
+  .menu .tabi {
+    position: relative;
+    display: block;
+    left: 0vw;
+    font-size: 5vw;
+    font-family: Gabriola;
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    text-shadow: 0px 0px 7px #d6b709;
+  }
+  
+  .menu .tabi .cada-letra {
+    display: inline;
+  }

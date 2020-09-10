@@ -1,0 +1,35 @@
+ 
+  .products-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+  }
+  
+  .products-container .card-body {
+    text-align: center;
+  }
+  
+  .products-container .card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .products-container .card-footer button {
+    color: white;
+    background: orange;
+    -webkit-box-shadow: 0px 0px 10px 4px gold inset;
+            box-shadow: 0px 0px 10px 4px gold inset;
+    font-family: Segoe UI Symbol;
+    font-size: 1.3vw;
+    color: white;
+    font-weight: 1000;
+    border: 1px solid gold;
+  }
+  

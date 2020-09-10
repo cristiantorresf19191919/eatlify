@@ -6,8 +6,81 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+             <!-- Bootstrap core CSS -->
+             <link
+             href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+             rel="stylesheet"
+           />
+            <!-- Material Design Bootstrap -->
+            <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
+            rel="stylesheet"
+          />
+          <!-- iconos font awesome -->
+          <script src="https://kit.fontawesome.com/2e559cd7fe.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body class="mat-typography">
+
   <app-root></app-root>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+     <script>
+      let logoTag = document.querySelector(".tabi");
+      let texto = logoTag.innerHTML;
+
+      logoTag.innerHTML = "";
+      let arregloTexto = texto.split("");
+
+      let cadaLetra;
+      for (let i = 0; i < arregloTexto.length; i++) {
+        cadaLetra = document.createElement("p");
+        cadaLetra.innerHTML = arregloTexto[i];
+        cadaLetra.classList.add("cada-letra");
+
+        document.querySelector(".tabi").appendChild(cadaLetra);
+      }
+
+      let animarCategorias = anime.timeline({
+          easing:"easeOutBack",
+          duration:250
+      });
+
+      animarCategorias
+
+      .add({
+            targets:".catSliderContainer .item",
+            opacity:['0','1'],
+            translateY:['-30px','0'],     
+            scale:['0','1'],      
+            easing: 'easeInOutSine',
+            delay: anime.stagger(50)
+        })
+
+      let animarLogo = anime.timeline({
+        easing: "easeOutBack",
+        duration: 1000,
+      });
+
+      animarLogo
+        .add({
+          targets: ".tab",
+          left:['-200%','0'],
+          opacity: [0, 1],
+          rotate: [45, 0],
+          delay: anime.stagger(150),
+        })
+        .add({
+          targets: ".cada-letra",
+          scale: ["3", "1"],  
+          delay: anime.stagger(50),
+        })        
+       
+    </script>
+
+    <!-- slider js puro -->
+
+
 </body>
 </html>

@@ -1,0 +1,775 @@
+
+
+    body {
+        padding:0;
+        margin:0;
+        background:#f1f1f2; 
+        overflow-x:hidden;  
+       
+         
+   
+     } 
+ 
+ :root {
+ --cucu :orange;
+ --cos:red;
+ /* --tan:gold; */
+ --tan:rgb(250, 188, 17);
+ --con:rgb(0,0,0,0.2);
+ }  
+ 
+ .tubody   {
+ position: relative;
+ width: 100%;
+ height: 87vh;
+ background:crimson;
+ overflow: hidden;
+ 
+ 
+ }
+ 
+     .contenlo{
+         position: relative;
+         
+         width: 100vw;
+         height: 55vh;
+         
+         
+         
+ 
+ 
+ }
+ 
+ 
+ 
+  .contenedor-uno , .contenedorbur  {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background:var(--cos); 
+          
+         display: flex;
+         justify-content: center;
+         align-items: center;
+ 
+ 
+ }
+ 
+ 
+ .contenedorbur {
+ 
+   clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 50%);
+ 
+ }
+ 
+ 
+ 
+     .contenedor-dos{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         filter: contrast(20); 
+         
+        
+ 
+ }
+ 
+  .contenedormu{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+        
+         
+        
+ 
+ }
+ 
+ 
+ 
+     .contenedor-dos:before{
+       content: "";
+         position:absolute;
+         top:0%;
+         left:0%;
+         width: 100%;
+         height: 100%;
+         background:rgba(5, 5, 243, 0.2);        
+ 
+ 
+ }
+ 
+ 
+  .pompa1{
+ 
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background:var(--cucu);
+ filter: blur(12px);
+ display: flex;
+ justify-content: center;
+ align-items: center;  
+ 
+ }
+ 
+ 
+  .pompa12{
+ 
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background:var(--cucu);
+ filter: blur(12px);
+ display: flex;
+ justify-content: center;
+ align-items: center;  
+ 
+ }
+ 
+ 
+ 
+  .pompatu{
+ 
+ position: absolute;
+ width: 80%;
+ left:20%;
+ height: 100%; 
+ 
+ 
+ }
+ 
+  .pompa2{
+ 
+ position: absolute;
+ width: 5vw;
+ height: 5vw;
+ background: #E63844;
+ filter: blur(12px);
+ top:35%; 
+ border-radius: 20vw;
+ animation: mover 5s infinite ;
+ }
+ 
+ @keyframes mover {
+ 
+   0% {left:10%;}
+   100% {left:70%;}
+  
+ }
+ 
+ 
+ .conte {
+ position: absolute;
+ width: 100%;
+ height: 96%;
+ 
+ background-size:cover; 
+  
+ }
+ 
+ 
+ .conte:before {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+  background:var(--con); 
+ 
+ 
+ }
+ 
+ .cada-letra{
+   display: inline;
+   word-wrap: normal;
+ }
+ 
+ 
+ 
+ .menu {
+     position: sticky;
+     top:0%;
+    background:gold; 
+    height: 5.85vw;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 0vw solid #F58000;
+     z-index: 20000;
+      box-shadow: 0px 0px 32px 22px orange inset;
+ }
+ 
+ 
+ 
+ @media (min-width:550px){
+   .menu{   
+     padding: 0 3%;
+    
+   }
+ }
+ 
+ .menu .space{
+   flex: 1;
+ }
+ 
+ 
+ .consu {
+ position: relative;
+ width: 100%;
+ height: 1vw;
+ 
+ background:white; 
+ z-index: 1000;
+ 
+ }
+ 
+ .tab  {
+   position: relative;
+ margin-left:3.5vw;
+ font-size: 3.5vw;
+ font-family: Gabriola;
+ color:white;
+ text-shadow: 0px 0px 10px gold;
+ cursor:pointer;
+ 
+ }
+ 
+ 
+ 
+ 
+ .menu .tab:before {
+   
+ content: "";
+ position: absolute;
+ bottom: 20%;
+ left:0%;
+ height: 3px;
+ width: 0%;
+ background:white; 
+  transition: 0.5s all ease;
+ }
+ 
+ .menu .tab:hover:before {
+   width: 100%;
+   
+  
+ }
+ 
+ 
+ .tabi  {
+   position: relative;
+   display: block;
+ left:0vw;
+ font-size: 5vw;
+ font-family: Gabriola;
+ color:white;
+ padding:0%; 
+ margin:0%;
+ text-shadow: 0px 0px 7px rgb(214, 183, 9);
+ }
+ 
+ .stefa  {
+ position: relative;
+ color:white;
+ 
+ }
+ 
+ .rubi {
+ position: relative;
+ width: 100%;
+ height: 32.5vh;
+ display:flex;
+ justify-content: flex-end;
+ }
+ 
+ 
+     .tesoro{
+         position: relative;
+         
+         width:35vw;
+         height: 100%;
+         background:var(--cos); 
+ 
+ 
+ }
+ 
+ 
+     .tesorodos{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         filter: contrast(20); 
+ 
+ 
+ }
+ 
+ 
+ 
+     .tesorodos:before{
+       content: "";
+         position:absolute;
+         top:0%;
+         left:0%;
+         width: 100%;
+         height: 100%;
+         background:blue 
+ 
+ 
+ }
+ 
+ 
+  .buruno{
+ 
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background: var(--cucu);
+ filter: blur(12px);
+ 
+ }
+ 
+ 
+ 
+     .caja{
+         position: relative;
+         width: 35%;
+         height:100%;
+         background:var(--cos); 
+ 
+ 
+ }
+ 
+ 
+     .cajados{
+         position: relative;
+         width: 100%;
+         height: 100%;
+         filter: contrast(20); 
+ 
+ 
+ }
+ 
+ 
+ 
+     .cajados:before{
+       content: "";
+         position:absolute;
+         top:0%;
+         left:0%;
+         width: 100%;
+         height: 100%;
+         background:blue;  
+ 
+ 
+ }
+ 
+ 
+  .burdos{
+ 
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background:var(--cucu);
+ filter: blur(12px);
+  
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+     .linea{
+         position: relative;
+         width: 30%;
+         height: 100%;
+         background:var(--cos); 
+ 
+ 
+ }
+ 
+ 
+     .lineados{
+         position: relative;
+         width: 100%;
+         height: 100%;
+         
+ 
+ 
+ }
+ 
+ 
+ 
+     .lineados:before{
+       content: "";
+         position:absolute;
+         top:0%;
+         left:0%;
+         width: 100%;
+         height: 100%;
+         background:blue;  
+ 
+ 
+ }
+ 
+ 
+  .liquido{
+ 
+ position: absolute;
+ width: 100%;
+ height: 100%;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  
+ 
+ }
+ 
+ .liquido:after{
+       content: "Ofertas";
+         position:absolute;
+      display: flex;
+       justify-content: center;
+       align-items: center;
+         
+         width: 100%;
+         height: 100%;
+         font-family: Gabriola;
+                font-size: 7vw;
+           background:rgb(0, 0, 0, 0.6);
+           text-shadow: 0px 0px 7px gold;
+         color:white;
+ z-index: 3000;
+ 
+ 
+ }
+ .contetodo {
+ position: absolute;
+ top:0%;
+ width: 99%;
+ height: 96%;
+ 
+ background-size:cover; 
+ 
+ 
+ }
+ 
+ .contetodo:before {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background: var(--con); 
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ .contetodos {
+ position: absolute;
+ top:0%;
+ width: 99%;
+ height: 96%;
+ 
+ background-size:cover; 
+ 
+ 
+ }
+ 
+ .contetodos:before {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+  background: var(--con);
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .pizza {
+   position: relative;
+ width: 100%;
+ height: 100% ;
+
+ z-index: 2000;
+ font-family:  Segoe UI Symbol;
+ color:white;
+ left:0%;
+ bottom:0px;
+ overflow: hidden;
+ }
+ 
+ 
+ .pizza .texto {
+   position: absolute;
+     left:2vw;
+     top: 3vh;
+     margin:0%; 
+     font-size: 3vw;
+     padding: 0vw 1.5vw 0vw 1.5vw;
+     background:radial-gradient(gold,orange);
+     box-shadow: 0px 0px 1px 3px white ;
+     border-radius:50vw;
+     text-shadow: 0px 0px 0px gold;
+ }
+ 
+ .eat   {
+   position: absolute;
+     
+   z-index: 4000;
+   width: 100%;
+   background:linear-gradient(120deg,white,rgb(255,255,255,0.5),white);
+   height: 20%;
+   bottom: 0%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 0px 5px 2px gold;
+ 
+ 
+ }
+ 
+ 
+ .eat i  {
+ 
+ padding: 1vw;
+ margin:2vw;
+ margin-left:3vw;
+ font-size: 2vw;
+ color:white;
+ background:radial-gradient(gold 10%,orange); 
+ box-shadow: 0px 0px 0px 2.5px white;
+ border-radius:50%; 
+ text-shadow: 0px 0px 0px white;
+ }
+ 
+ .clase {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: Gabriola;
+ font-size:12vw;
+ color:white;
+ 
+ 
+ 
+ }
+ 
+ .clase p {
+ text-shadow: 0px 0px 5px gold ;
+ 
+ 
+ 
+ }
+ 
+ 
+ .clasi {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center ;
+ top:75%;
+ width: 100%;
+ height:75%;
+ 
+ background:white; 
+ 
+ }  
+ 
+ 
+ 
+ .redo {
+ 
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+ padding: 2vw;
+ background:gold; 
+ border-radius: 50%;
+ border:3px solid white ;
+ box-shadow: 0px 0px 10px 3px orange inset ;
+ margin-left:6vw;
+ margin-right: 5.5vw;
+ }
+ 
+ .clasi .redo i {
+ 
+ font-size: 4vw;
+ color:white;
+
+ animation: mover 7s infinite;
+ text-shadow: 0px 0px 3px orange;
+ 
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ .redo i:hover {
+ text-shadow: 0px 0px 3px white;
+ 
+ 
+ }
+ 
+ @keyframes mover {
+ 
+  0%   {transform:rotateY(-20deg); }
+ 10%   {transform:rotateY(-20deg); }
+  
+ 
+  40% {transform: rotateY(0deg);
+ }
+ 
+ 
+ 50% {transform: rotateY(-25deg);
+ }
+ 
+ 
+ 60% {transform: rotateY(25deg);
+ }
+ 
+ 
+ 70% {transform: rotateY(-25deg);
+ }
+ 
+ 
+ 80% {transform: rotate(-10deg);
+ }
+ 
+ 90% {transform: rotate(10deg);
+ }
+ 
+ 
+ 100% {transform: rotate(0deg);
+ }
+ 
+ }
+   
+ .clasi p{
+   position:absolute;
+   top:-24%;
+   display: block;
+ color:white;
+ font-size: 5vw;
+ font-family:Gabriola;
+ text-shadow:0px 0px 0px orange;  
+ background:linear-gradient(gold,orange);
+ border-radius: 20vw;
+ padding: 0vw 2vw 0vw 2vw;
+ border:10px solid white ;
+  
+ 
+ 
+ 
+ }
+   
+ 
+ 
+ 
+ .clasi .redo p {
+   position: absolute;
+   width: 200%;
+ color:gold;
+ font-size: 2.5vw;
+ top:0%;
+ margin:10vw;
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+  background:none; 
+ border-radius: 20vw;
+ border:0px solid white ;
+ animation: none;
+ 
+ }
+ 
+ 
+ .caja-img   {
+   position: relative;
+   top:50%;
+ width: 100vw;
+ height:auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+
+ 
+ 
+ 
+ }
+ 
+ 
+ 
+ .caja-img p   {
+ position: absolute;
+ top:-30%;
+ display: flex;
+ justify-content: center; 
+ width: 60vw;
+ background:linear-gradient(gold,orange);
+ color:white;
+ font-size: 5vw;
+ font-family: Gabriola;
+ font-weight: 1000; 
+ border-radius: 20vw;
+ 
+ 
+ }
+ 
+ 
+ .item1 , .item2 , .item3 , .item4 , .item5 , .item6 , .item7 , .item8 , .item9 , .item10 {
+   position: relative;  
+ color:white;
+ width: 12vw;
+ height: 12vw;
+ margin: 4.5vw ;
+ border-radius: 50%;
+ border: 4px solid orange ;
+ box-shadow: 0px 0px 1px 5px gold;
+ display: flex;
+ justify-content: center;
+ 
+ } 
+ 
+ 
+ 
+ .item1  {background: url("https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_960_720.jpg");background-size:cover; }
+ .item2  {background: url("https://cdn.pixabay.com/photo/2014/07/08/12/34/pizza-386717_960_720.jpg");background-size:cover; }
+ .item3  {background: url("https://cdn.pixabay.com/photo/2017/02/09/14/01/kebab-2052339__340.jpg");background-size:cover; }
+ .item4  {background: url("https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_960_720.jpg");background-size:cover; }
+ .item5  {background: url("https://cdn.pixabay.com/photo/2017/02/09/14/01/kebab-2052339__340.jpg");background-size:cover; }
+ .item6  {background: url("https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_960_720.jpg");background-size:cover; }
+ .item7  {background: url("https://cdn.pixabay.com/photo/2014/07/08/12/34/pizza-386717_960_720.jpg");background-size:cover; }
+ .item8  {background: url("https://cdn.pixabay.com/photo/2017/02/09/14/01/kebab-2052339__340.jpg");background-size:cover; }
+ .item9  {background: url("https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_960_720.jpg");background-size:cover; }
+ .item10  {background: url("https://cdn.pixabay.com/photo/2014/07/08/12/34/pizza-386717_960_720.jpg");background-size:cover; }
+ 
+ .item1 p , .item2 p , .item3 p , .item4 p , .item5 p , .item6 p , .item7 p , .item8 p , .item9 p , .item10 p {
+   position: absolute;
+ width: 10vw;
+ top:110%;
+ background:linear-gradient(gold,orange);
+ color:white;
+ font-size:2vw; 
+ font-weight: 1000;  
+ display: flex;
+ justify-content: center;
+ border-radius: 20vw;
+ margin:0%; 
+ }    
+ 

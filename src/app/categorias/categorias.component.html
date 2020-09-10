@@ -1,0 +1,27 @@
+  <!-- categoria slider -->
+  <section class="container-fluid w-70 my-2 z-depth-1" style="width: 95%;">
+    <div class="row position-relative">
+
+        <div class="col-12 catSliderContainer ">
+            <!-- aca sera un ciclo for en angular recorriendo todas las categorias de la base de datos -->
+            <div class="item" style="background-image:url('https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246__340.jpg')"><p>hamburguer</p></div>
+            <!-- angular va a traer la imagen de la base de datos y la inyecta en style a cada div  -->
+            <div class="item" style="background-image:url('https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523__340.jpg')"><p>pizza</p></div>
+            <div class="item" style="background-image:url('https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467__340.jpg')"><p>vegetables</p></div>
+            <div class="item" style="background-image:url('https://cdn.pixabay.com/photo/2015/04/10/00/41/food-715542__340.jpg')"><p>asian</p></div>
+            <div class="item"><p>italian</p></div>
+            <div class="item"><p>vietnamese</p></div>
+            <div class="item" style="background-image: url('https://media.istockphoto.com/photos/fried-rice-noodles-with-chicken-slices-picture-id493106776?b=1&k=6&m=493106776&s=170667a&w=0&h=IO4XCTrxEipPHCj1NFpnPwA8OFybq90BVcHBbhcmhF4=');"><p>tai</p></div>
+            <div class="item"><p>hamburguer</p></div>
+            <div class="item"><p>hamburguer</p></div>
+            <div class="item"><p>hamburguer</p></div>
+            <div class="item"><p>hamburguer</p></div>
+            <div class="item"><p>hamburguer</p></div>
+            <div class="item"><p>hamburguer</p></div>
+            <div class="item"><p>hamburguer</p></div>
+            <div class="item"><p>hamburguer</p></div>
+        </div>
+        <i class="fa fa-arrow-left flecha-izquierda " (click)="deslizeIzquierda()"></i>
+        <i class="fa fa-arrow-right flecha-derecha " (click)="deslizeDerecha()"></i>
+    </div>
+</section>    
